@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Javascript week 4</h1>
-   !...Lessson 1...
+   
    
     <div  class="lesson">
         <h3>Lesson 1: show text on page</h3>
@@ -22,8 +22,30 @@
         function lesson1(){
          document.getElementById("heading1").innerHTML="This is Javascript lessons";
          document.getElementById("text1").innerHTML="I'm having fun with Javascript";
-        }
+        }        
      </script>
     </div>
+
+    
+
+        <div class="lesson">
+            <h2>Lesson 2: Variables(Text storage)</h2>
+
+            <h2 id="heading2">Text will change</h2>
+            <P id="text2">More text here</P>
+            <button onclick="lesson2()">Use Variables </button>
+
+            <script>
+                function lesson2() {
+                    var message1 = "Hellow everyone!";
+                    var message2 = "I love Javascript it's fun!  ";
+                    var message3 = "It's awesome!";
+
+                    document.getElementById("heading2").innerHTML = message1;
+                    document.getElementById("text2").innerHTML = message2 + ""+ message3;
+                }
+                
+            </script>
+        </div>
 </body>
 </html>
