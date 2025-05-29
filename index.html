@@ -102,6 +102,27 @@
             <P>Click on the word "Javascript" abaove.</P>
 
         </div>
-        
+
+/......Lesson 6..../
+   <div class="lesson">
+    <h3>Lesson 6: Toggle Functions</h3>
+
+    <h2 id="toggle" onclick="toggleText()">Javascript</h2>
+    <p>Click repeatedly to toggle!</p>
+
+    <script>
+        function toggleText() {
+            var toggle = document.getElementById("toggle");
+
+            if(toggle.innerHTML == "Javascript") {
+                toggle.innerHTML = "is awesome";
+            } else {
+                toggle.innerHTML = "Javascript";
+            }
+        }
+    </script>
+
+   </div>
+   
 </body>
 </html>
